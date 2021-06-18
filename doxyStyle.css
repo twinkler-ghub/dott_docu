@@ -1,0 +1,175 @@
+/* The standard CSS for doxygen 1.8.8 */
+
+/****************************************************************************
+ * custom items, can be expanded to if needed
+ ***************************************************************************/
+
+/* Architecture (layer) table on sample main page */
+#layerTable a:hover {
+font-weight: bold;
+color: lightgrey;
+}
+
+#layerTable a:link {
+    font-weight: bold;
+    color: white;
+}
+
+#layerTable a:visited {
+    font-weight: bold;
+    color: white;
+}
+
+/* images should be displayed left */
+.image {
+    text-align: left;
+    margin-left: 10px;
+}
+
+/* caption style */
+.caption::before {
+    content: "Figure: ";
+}
+.caption {
+    color: #46555f;
+    font-weight: bold;
+    text-align: left;
+}
+
+/***************************************************************************/
+/***************************************************************************/
+/***************************************************************************/
+/***************************************************************************/
+/***************************************************************************/
+
+/****************************************************************************
+ * Changes from doxygen.css - PLEASE DO NOT EDIT FROM HERE ON!!!
+ ***************************************************************************/
+
+ /* Project area (very top) */
+#projectname {
+    color: #46555f;
+	font-size: 300%;
+}
+#projectlogo img{
+	margin: 10px 30px 10px 10px;
+}
+
+/* Title area */
+ .title, h1 {
+	color: #46555f;
+	font-size: 200%;
+}
+h2 {
+	color: #46555f;
+	font-size: 150%;
+}
+h3 {
+	color: #46555f;
+	font-size: 120%;
+}
+#titlearea {
+    border-bottom: none;
+}
+
+/* Page Headers */
+div.header {
+    background-image: none;
+    background-color: #fff;
+}
+
+/* content links (functions, files, etc.) */
+.contents a, a:link {
+    color: #0075b0;
+}
+
+.contents a:visited {
+    color: #0075b0;
+}
+
+/* member prototypes */
+.memproto {
+    background-image: linear-gradient(to bottom, #8cc1db, white 170%);
+    text-shadow: none;
+}
+/* parameters */
+.paramname {
+    color: #fd5613;
+}
+
+/* glow effects when searching */
+h1.glow, h2.glow, h3.glow, h4.glow, h5.glow, h6.glow {
+	text-shadow: 0 0 15px #fd5613;
+}
+div.line.glow {
+	background-color: #fd5613;
+	box-shadow: 0 0 10px #fd5613;
+}
+.memberdecls td.glow, .fieldtable tr.glow {
+	background-color: #fd5613;
+	box-shadow: 0 0 15px #fd5613;
+}
+.memitem.glow {
+         box-shadow: 0 0 15px #fd5613;
+}
+
+/* tabs (Top Navigation Bar) */
+.tabs, .tabs2, .tabs3 {
+    background-image: none;
+    border-bottom: 1px solid #ACB2B7;
+}
+
+.tablist li {
+    background-image: none;
+}
+
+.tablist a {
+    background-image: none;
+    color: #46555f;
+    text-shadow: none;
+}
+
+.tabs3 .tablist a {
+    padding: 0 10px;
+}
+
+.tablist a:hover {
+    background-image: none;
+    color: #0075b0;
+    text-shadow: none;
+}
+
+.tablist li.current a {
+    background-image: none;
+    border: 1px solid #ACB2B7;
+    border-bottom: none;
+    color: #46555f;
+    text-shadow: none;
+}
+
+/* Navigation Tree (left navigation) */
+.navpath ul {
+    background-image: none;
+}
+
+#nav-tree .selected {
+  background-image: none;
+  background-color: #46555f;
+  text-shadow: none;
+}
+
+#nav-tree {
+    background-image: none;
+    background-color: #F8F9F9;
+}
+
+/* resizable bar between navigation tree and content */
+.ui-resizable-e {
+    border-left: 2px solid #46555f;
+    background: none;
+    width: 2px;
+}
+
+.fieldtable th {
+    background-image: linear-gradient(to bottom, #0075b0, white 170%);
+}
