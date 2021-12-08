@@ -67,12 +67,23 @@ $(function() {
 <li>Tests are performed on Windows 10 (64 bit) and Ubuntu Linux 20.04 (64bit) only.</li>
 </ul>
 <h2>Changelog</h2>
+<h3>1.6.0 (2021/12/08)</h3>
+<ul>
+<li>Added optional timeout to <code>dottmi.target.Target.eval()</code>.</li>
+<li>Added <code>C:\Program Files\</code> to search path for JLink dll (supporting 64bit JLink releases).</li>
+<li>Ignore instances of JLink dll where not JLink GDB server binary is in same folder (e.g., ignore Ozone install dirs which have a JLink DLL but no GDB server binary).</li>
+<li>If <code>dottmi.target.Target.eval()</code> returns a CPP reference, the address is prefixed with @ by GDB. The leading is now automatically removed from the address.</li>
+<li>Added decoder/pretty printer <code>dottmi.target.Target.reg_cm_xpsr_to_str()</code>. for Arm Cortex-M xPSR register.</li>
+<li>Halting the target via <code>dottmi.target.Target.halt()</code> now ensures by default that the target is halted outside an IT block. This behavior can be changed via the new optional parameter <code>halt_in_it_block</code></li>
+<li>Fixed parsing issue for BL symbol address in dott.ini.</li>
+</ul>
 <h3>1.5.1 (2021/08/06)</h3>
 <ul>
-<li>Fixed issue where <code>dott().target.ret()</code> when used without return value failed.</li>
-<li>Enhanced (internal) mechanism which reports the target's state (running or halted). <br /></li>
+<li>Fixed issue where <code>dottmi.target.Target.ret()</code> when used without return value failed.</li>
+<li>Enhanced (internal) mechanism which reports the target's state (running or halted). <br />
+ <h3>1.5.0 (2021/06/18)</h3>
+</li>
 </ul>
-<h3>1.5.0 (2021/06/18)</h3>
 <ul>
 <li>minor code cleanups</li>
 <li>DOTT released to Open Source community</li>
