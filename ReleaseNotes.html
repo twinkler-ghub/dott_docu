@@ -67,6 +67,14 @@ $(function() {
 <li>Tests are performed on Windows 10 (64 bit) and Ubuntu Linux 20.04 (64bit) only.</li>
 </ul>
 <h2>Changelog</h2>
+<h3>1.6.2 (2022/01/20)</h3>
+<ul>
+<li>If GDB server is detected as OpenOCD, <code>monitor reset halt</code> is used instead of <code>monitor reset</code> in <code>dottmi.target.Target.halt()</code>.</li>
+</ul>
+<h3>1.6.1 (2022/01/16)</h3>
+<ul>
+<li>Added quirks to support OpenOCD's naming of xPSR register and monitor commands.</li>
+</ul>
 <h3>1.6.0 (2021/12/08)</h3>
 <ul>
 <li>Added optional timeout to <code>dottmi.target.Target.eval()</code>.</li>
