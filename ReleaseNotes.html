@@ -67,6 +67,11 @@ $(function() {
 <li>Tests are performed on Windows 10 (64 bit) and Ubuntu Linux 20.04 (64bit) only.</li>
 </ul>
 <h2>Changelog</h2>
+<h3>1.6.3 (2022/05/10)</h3>
+<ul>
+<li>Fix versions of most important dependencies (as, e.g., pygdbmi).</li>
+<li>Add index notation for TypedPtr to access elements of arrays allocated on-target. See <code>test_example_SumElements</code> in <code>test_example_functions.py</code>.</li>
+</ul>
 <h3>1.6.2 (2022/01/20)</h3>
 <ul>
 <li>If GDB server is detected as OpenOCD, <code>monitor reset halt</code> is used instead of <code>monitor reset</code> in <code>dottmi.target.Target.halt()</code>.</li>
