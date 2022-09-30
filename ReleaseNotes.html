@@ -67,6 +67,11 @@ $(function() {
 <li>Tests are performed on Windows 10 (64 bit) and Ubuntu Linux 20.04 (64bit) only.</li>
 </ul>
 <h2>Changelog</h2>
+<h3>1.6.4 (2022/09/29)</h3>
+<ul>
+<li>Avoid halting already halted target (causing issues with OpenOCD)</li>
+<li>Improved <code>breakpoint-hit</code> handling for OpenOCD.</li>
+</ul>
 <h3>1.6.3 (2022/05/10)</h3>
 <ul>
 <li>Fix versions of most important dependencies (as, e.g., pygdbmi).</li>
@@ -183,7 +188,6 @@ $(function() {
 <li>Target live access is currently not supported on Linux hosts.</li>
 <li>JLINK gdb server auto-launch is currently not supported on Linux hosts.</li>
 <li>Overall, Linux support is currently provided 'as is'. Testing of DOTT releases is still only done on Windows 10.</li>
-<li>A first, preliminary Linux DOTT runtime has been made available on <a href="http://srcint01.amsint.com/dott/">http://srcint01.amsint.com/dott/</a></li>
 </ul>
 </li>
 </ul>
